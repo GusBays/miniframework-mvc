@@ -1,8 +1,8 @@
-<h1>Sobre Nós</h1>
+<h1>Sobre nós</h1>
 </hr>
 
-<?php
-
-echo 'chegamos ao index controller e disparou sobreNos';
-
-?>
+<?php foreach($this->view->dados as $key => $info) { ?>
+    <h3> <?= $info['titulo'] ?></h3> 
+    <p> <?= $info['descricao'] ?>
+    <hr/>
+<?php } ?>
